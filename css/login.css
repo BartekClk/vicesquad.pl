@@ -1,0 +1,245 @@
+html {
+    min-height: 900px;
+}
+
+footer {
+    position: static;
+    margin-top: 150px;
+}
+
+.box_title {
+    font-size: 30px;
+    color: white;
+    padding-top: 25px;
+    margin-bottom: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box_subtitle {
+    font-size: 16px;
+    color: white;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.box_back {
+    width: 100%;
+    height: fit-content;
+}
+
+.box {
+    width: 500px;
+    background-color: #1d1d20;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+form {
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+
+.form_input {
+    width: fit-content;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_input>input {
+    height: 50px;
+    width: 220px;
+    background-color: transparent;
+    color: white;
+    border-radius: 30px;
+    padding: 8px;
+    outline: none;
+    transition-duration: 0.2s;
+    text-align: center;
+}
+
+.form_input>select {
+    height: 50px;
+    width: 220px;
+    background-color: transparent;
+    color: white;
+    border-radius: 30px;
+    padding: 8px;
+    outline: none;
+    transition-duration: 0.2s;
+    text-align: center;
+    overflow: scroll;
+}
+
+.form_input>select>option {
+    background-color: #1d1d20;
+}
+
+.form_checkbox>label {
+    color: white;
+}
+
+.form_checkbox {
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.text {
+    border: rgba(112, 253, 255, 0.8) solid 2px;
+}
+
+.password {
+    border: rgba(112, 253, 255, 0.8) solid 2px;
+}
+
+.form_input>input:focus {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.form_input>select:focus {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.text:focus {
+    border: rgba(255, 201, 252, 0.8) solid 2px;
+}
+
+.password:focus {
+    border: rgba(255, 201, 252, 0.8) solid 2px;
+}
+
+.form_button {
+    width: fit-content;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_button>input {
+    width: 160px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border-radius: 30px;
+    padding: 8px;
+    outline: none;
+    transition-duration: 0.2s;
+    text-align: center;
+    border: rgba(112, 253, 255, 0.8) solid 2px;
+    transition-duration: 0.2s;
+}
+
+.form_button>input:hover {
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: rgba(255, 201, 252, 0.8) 2px solid;
+}
+
+.down_text {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.2s;
+    opacity: 0.50;
+    font-weight: bold;
+}
+
+.down_text>p {
+    margin-bottom: 4px;
+}
+
+.down_text:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+#box_back_arrow {
+    padding: 10px;
+    width: 60px;
+    opacity: 0.7;
+    transition: 0.2s;
+    position: absolute;
+}
+
+#box_back_arrow:hover {
+    cursor: pointer;
+}
+
+#box_submit_button {
+    font-weight: bold;
+}
+
+#error {
+    transition: 0.4s;
+}
+
+
+/* for screens smaller than 600px in width */
+
+@media only screen and (max-width: 600px) {
+    /* nav bar grid container */
+    .grid_container {
+        height: 380px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0px 300px 0px;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: ".";
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .box {
+        width: 100%;
+        min-width: 300px;
+    }
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+@-webkit-keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

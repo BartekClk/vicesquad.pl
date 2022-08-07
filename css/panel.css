@@ -1,0 +1,246 @@
+.panel_right_hidden {
+    right: -510px;
+}
+
+.panel_right_shown {
+    right: -2px;
+}
+
+.panel_left_hidden {
+    left: -510px;
+}
+
+.panel_left_shown {
+    left: -2px;
+    border-left: transparent 0px;
+}
+
+.panel_down_hidden {
+    top: -100px;
+}
+
+.panel_down_shown {
+    top: 0;
+}
+
+.panel_box {
+    z-index: 2;
+    top: 0;
+    position: fixed;
+    height: 100%;
+    background-color: black;
+    width: 500px;
+    background: #1d1d20;
+    border-left: rgba(255, 201, 252, 0.8) 2px solid;
+    border-right: rgba(255, 201, 252, 0.8) 2px solid;
+    transition-duration: 0.4s;
+    animation-name: border_animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-shadow: black 2px 2px 2px;
+}
+
+.close_user_panel {
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.logout_user_panel {
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.center {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.click {
+    opacity: 0.5;
+}
+
+.click:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 15px;
+    color: white;
+    opacity: 0.5;
+}
+
+.table-dark {
+    --bs-table-bg: transparent;
+}
+
+td {
+    text-align: center;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+tbody {
+    border-top: #373b3e 1px solid;
+}
+
+p {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 1);
+}
+
+.user_panel_change {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.user_panel_change_box {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.queue {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.queue:hover {
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+#email:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#password:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#nick:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#in_user_panel {
+    height: 400px;
+    position: absolute;
+    bottom: 20px;
+    width: 95%;
+    border-radius: 20px;
+    margin-right: 2.5%;
+    border-right: 2px solid;
+}
+
+.box {
+    width: 100%;
+    height: fit-content;
+}
+
+form {
+    padding-bottom: 0;
+}
+
+#new_code {
+    margin-top: 0px;
+}
+
+.notification_back {
+    z-index: 3;
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: #1d1d20;
+    border-bottom: rgba(255, 201, 252, 0.8) solid 2px;
+    transition-duration: 0.4s;
+    animation-name: border_animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    padding-top: 5px;
+    overflow: hidden;
+}
+
+.notification_box {
+    position: relative;
+}
+
+.close_notification_panel {
+    height: 20px;
+    position: absolute;
+    right: 5%;
+    top: 8px;
+}
+
+#close_import_info_panel {
+    left: 20px;
+    top: 20px;
+    height: 20px;
+    position: sticky;
+}
+
+#import_info_panel {
+    overflow-y: scroll;
+}
+
+.car_list_car {
+    width: 100%;
+}
+
+@keyframes border_animation {
+    0% {
+        border-color: rgba(255, 201, 252, 0.8);
+    }
+    50% {
+        border-color: rgba(112, 253, 255, 0.8);
+    }
+    100% {
+        border-color: rgba(255, 201, 252, 0.8);
+    }
+}
+
+@keyframes color_change {
+    0% {
+        color: rgba(255, 201, 252);
+    }
+    50% {
+        color: rgba(112, 253, 255);
+    }
+    100% {
+        color: rgba(255, 201, 252);
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .panel_box {
+        z-index: 2;
+        top: 0;
+        position: fixed;
+        height: 100%;
+        background-color: black;
+        width: 100%;
+        background: #1d1d20;
+        border: transparent;
+        text-shadow: black 2px 2px 2px;
+    }
+    .panel_right_shown {
+        right: 0px;
+    }
+    .panel_left_shown {
+        left: 0px;
+        border-left: transparent 0px;
+    }
+}
